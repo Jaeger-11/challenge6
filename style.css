@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(https://fonts.google.com/specimen/Inter);
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+}
+
+#container{
+    width: 70%;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0.7;
+    position: relative;
+}
+
+#imageBox{
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+    background-color: rgb(228, 113, 228);
+}
+
+#contentBox{
+    padding: 15px 25px;
+    height: 100%;
+    width: 100%;
+    padding-top: 25px;
+}
+
+h1{
+    font-size: x-large;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif !important;
+    position: relative;
+    font-size: smaller;
+}
+
+#infoBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.numInfo{
+    padding: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.smallinfo{
+    font-size: 10px;
+    font-weight: normal;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.purple{
+    color: hsl(277, 64%, 61%);
+}
+
+@media screen and (max-width: 760px) {
+    #container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contentBox{
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #container {
+        width: 95%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: absolute;
+        margin: 50px 30px;
+    }
+
+    #contentBox{
+        text-align: center;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    h1 {
+        padding: 10px 20px;
+    }
+
+    p{
+        margin: 5px 30px;
+        padding: 0px 10px;
+    }
+
+    #infoBox{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5px;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .numInfo{
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    #imageBox{
+        grid-row-start: 1;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    img{
+        border-radius: 10px 10px 0px 0px;
+    }
+}
